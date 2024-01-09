@@ -1,0 +1,507 @@
+/* 
+Auteur : Jennifer Carré
+Version : v1
+Date : 09/2023
+Contact : contact@jennifer-carre.com
+*/
+
+
+/*----------------------------------------------------------------------------------------*/
+/* STYLES RESET */
+/*----------------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd,  
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+/* GENERAL */
+/*----------------------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+	color: #333;
+}
+
+.marge-menu {
+	padding: 120px 0;
+}
+
+@media (max-width: 767px) {
+	.marge-menu {
+		padding: 80px 0 40px 0;
+	}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* COLORS */
+/*----------------------------------------------------------------------------------------*/
+
+/*
+grey #E9E9E9
+black #333
+dark red #CB5156
+red #ED5E64
+green #31CBB1
+blue #3333BD
+*/
+
+/*----------------------------------------------------------------------------------------*/
+/* TITLES AND FONTS */
+/*----------------------------------------------------------------------------------------*/
+
+
+h1 {
+	font-size: 2.25em;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 600;
+	color: #3333BD;
+}
+
+h3 {
+	font-size: 1.75em;
+	font-weight: 600;	
+}
+
+h4 {
+	font-size: 1.5em;
+	font-weight: 600;	
+}
+
+h5 {
+	font-size: 1.25em;
+	font-weight: 600;	
+}
+
+h6 {
+	font-size: 1.125em;
+	font-weight: 600;	
+}
+
+p {
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.subtitle {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 1.25em;
+}
+
+@media (max-width: 575px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+.my-button {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #ED5E64;
+	padding: 13px;
+	text-align: center;
+	border-radius: 50px;
+	display: block;
+	width: 250px;
+	border: none;
+}
+
+.my-button:hover {
+	background-color: #CB5156;
+}
+
+a {
+	color: #3333BD;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* NAVBAR */
+/*----------------------------------------------------------------------------------------*/
+
+nav {
+	background: linear-gradient(to right, rgba(51,51,189,0.95), rgba(49,203,177,0.95));
+	color: #fff;
+}
+
+nav a {
+	color: white !important;
+}
+
+nav button {
+	border: none !important;
+}
+nav button:focus {
+	box-shadow: none !important;
+}
+
+@media (max-width: 991px) {
+	#line {
+		display: none;
+	}	
+}
+
+.navbar-brand img {
+	width: 150px;
+}
+ 
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION ONE */
+/*----------------------------------------------------------------------------------------*/
+
+#section-one {
+	background: linear-gradient(to right, #3333BD, #31CBB1);
+	color: #fff;
+	padding-top: 70px;
+}
+
+#section-one article {
+	padding-top: 120px;
+}
+
+#section-one img {
+	border-radius: 400px 120px 120px 120px;
+	float: right;
+	width: 70%;
+}
+
+#section-one figure {
+	margin-bottom: -167px;
+    z-index: 100;
+}
+
+#section-one figure {
+	background-image: url(img/bulle-transparent-hero.png);
+	background-repeat: no-repeat;
+	background-position: 35% -3%;
+}
+
+/*** SHAPE DIVIDER START ***/
+.custom-shape-divider-bottom-1697465557 {
+    position: relative;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1697465557 svg {
+    position: relative;
+    display: block;
+    width: calc(240% + 1.3px);
+    height: 180px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1697465557 .shape-fill {
+    fill: #FFFFFF;
+}
+/*** SHAPE DIVIDER END ***/
+
+
+@media (max-width: 991px) {
+	#section-one figure {
+		padding-top: 50px;
+	}	
+}
+
+@media (max-width: 575px) {
+	#section-one article {
+		padding-top: 50px;
+	}
+}
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION ABOUT ME */
+/*----------------------------------------------------------------------------------------*/
+
+#about-me {
+	background-image: url(img/bulle-bleu.png), url(img/bulle-vert.png);
+	background-repeat: no-repeat;
+	background-position: -5% 0%, 110% 0%;
+	background-size: contain;
+}
+
+@media (max-width: 991px) {
+	#about-me {
+		background-image: url(img/bulle-bleu.png);
+		background-repeat: no-repeat;
+		background-position: -150% 0;
+	}	
+	#about-me .pe-5, #about-me .ps-5 {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	#about-me {
+		background: none;
+	}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION MY SKILLS */
+/*----------------------------------------------------------------------------------------*/
+
+#skills h3 {
+	font-size: 1em;
+}
+
+.progress {
+	height: 30px;
+	border-radius: 50px;
+}
+
+.progress-bar {
+	background-color: #ED5E64;
+	font-weight: 500;
+	text-align: end;
+	padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+	#skills {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION MY EXPERIENCES & TRAINING */
+/*----------------------------------------------------------------------------------------*/
+
+.accordion-button::after {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+
+.accordion-item {
+	box-shadow: 3px 4px 20px rgba(51,51,51,0.15);
+	border-radius: 20px 20px 20px 60px !important;
+	border: none;
+}
+
+#experiences button, #training button {
+	background: none;
+	font-weight: 500;
+}
+
+.accordion-button:focus, .accordion-button:not(.collapsed) {
+	box-shadow: none;
+	color: #333;
+}
+
+#experiences {
+	background-image: url(img/bulle-vert-400.png);
+	background-repeat: no-repeat;
+}
+
+#training {
+	background-image: url(img/bulle-bleu.png);
+	background-repeat: no-repeat;
+	background-position: 110% 0%;
+}
+
+@media (max-width: 767px) {
+	#experiences, #training {
+		background: none;
+	}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION PORTFOLIO */
+/*----------------------------------------------------------------------------------------*/
+
+.my_projects {
+	box-shadow: 3px 4px 20px rgba(51,51,51,0.15);
+	border-radius: 20px 20px 20px 60px;
+	background-color: white;
+}
+
+.my_projects a {
+	color: #ED5E64;
+	font-weight: 500;
+}
+.my_projects a:hover {
+	color: #CB5156;
+}
+
+.my_projects h2 {
+	font-size: 1.25em;
+}
+
+#portfolio {
+	background-image: url(img/bulle-vert.png), url(img/bulle-bleu.png);
+	background-repeat: no-repeat;
+	background-position: -32% 120%, 95% 100%;
+}
+
+@media (max-width: 1399px) {
+	#portfolio {
+		background: none;
+	}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* SECTION CONTACT */
+/*----------------------------------------------------------------------------------------*/
+
+#contact {
+	background: linear-gradient(to right, #3333BD, #31CBB1);
+	padding-bottom: 100px;
+}
+
+/*** SHAPE DIVIDER START ***/
+.custom-shape-divider-top-1697465632 {
+    position: relative;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1697465632 svg {
+    position: relative;
+    display: block;
+    width: calc(240% + 1.3px);
+    height: 180px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1697465632 .shape-fill {
+    fill: #FFFFFF;
+}
+/*** SHAPE DIVIDER END ***/
+
+#contact {
+	padding: 0 0 100px 0;
+}
+
+#contact form {
+	z-index: 100;
+	background-color: white;
+	box-shadow: 3px 4px 20px rgba(51,51,51,0.15);
+	border-radius: 20px;
+	margin-top: -150px;
+}
+
+#contact input, #contact textarea {
+	border: none;
+	background-color: #e9e9e9;
+	border-radius: 10px;
+}
+
+.white-text {
+	color: white;
+}
+
+.red-text {
+	color: #ED5E64;
+}
+
+@media (max-width: 575px) {
+	#contact form {
+		margin: 15px;
+		padding: 30px !important;
+		flex-shrink: 1;
+	}
+	#contact form button {
+		width: 100%;
+	}
+	#contact {
+		padding: 0 0 30px 0;
+	}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------------------------------------------------*/
+
+footer {
+	background: linear-gradient(to right, #3333BD, #31CBB1);
+}
+
+footer p {
+	font-weight: 300;
+}
+
+footer hr {
+	color: white;
+	opacity: 1;
+	margin: 0 !important;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* BUTTON BACK TO THE TOP */
+/*----------------------------------------------------------------------------------------*/
+
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #333;
+	font-size: 2em;
+	display: none;
+	z-index: 200;
+  }
+
+#btn-back-to-top:hover {
+	opacity: 0.7;
+  }  
+
+/*----------------------------------------------------------------------------------------*/
+/* PAGE CGU */
+/*----------------------------------------------------------------------------------------*/
+
+#cgu h1, #cgu h3 {
+	color: #3333BD;
+}
+
+#cgu h2, #cgu h3 {
+	padding-top: 20px;
+}
+
+@media (max-width: 575px) {
+	#cgu {
+		padding: 100px 15px 50px 15px;
+	}
+}

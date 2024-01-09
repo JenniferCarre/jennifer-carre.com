@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# BEGIN Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^jennifer-carre.com 
+RewriteRule (.*) https://www.jennifer-carre.com/$1 [R=301,L]
+# END Redirect www to non-www
+
+
+Options -Indexes
